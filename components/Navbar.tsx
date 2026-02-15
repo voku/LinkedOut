@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Home, Users, Briefcase, MessageSquare, Bell, Search, UserCircle, Grid } from 'lucide-react';
+import { Home, Users, Briefcase, MessageSquare, Bell, Search, UserCircle, Grid, Github } from 'lucide-react';
 import { CURRENT_USER } from '../constants';
 import { useToast } from './Toast';
 
@@ -63,6 +63,17 @@ const Navbar: React.FC = () => {
              <Grid className="w-6 h-6 text-gray-500" />
              <span className="text-xs text-gray-500 mt-1">For Business ▼</span>
           </div>
+          
+          <a 
+            href="https://github.com/voku/LinkedOut" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="hidden md:flex flex-col items-center px-4 border-l border-gray-100 hover:bg-gray-50 h-full justify-center transition-colors group"
+            title="View on GitHub"
+          >
+             <Github className="w-6 h-6 text-gray-500 group-hover:text-black transition-colors" />
+             <span className="text-xs text-gray-500 mt-1 group-hover:text-black transition-colors">GitHub</span>
+          </a>
         </div>
       </div>
     </nav>
